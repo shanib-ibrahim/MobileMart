@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #2563eb;
+    --primary-color: #3B82F6;  
     --secondary-color: #1e293b;
     --bg-color: #EAF8E7;
     --container-color: #ffffff;
@@ -8,12 +8,14 @@
   }
   
   body.dark-theme {
-    --primary-color: #2563eb;     
-    --secondary-color: #ffffff;
-    --bg-color: #0C2B4E;
+    --primary-color: #3B82F6;    
+    --secondary-color: #f1f5f9;
+    --bg-color: #0f172a;
     --container-color: #1e293b;
-    --grey-color: #555;
+    --grey-color: #475569;
   }
+  
+  
   
   
   * {
@@ -32,5 +34,15 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+  }
+  
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+  
+  .main-content {
+    flex: 1; 
   }
   

@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "name": "Apple iPhone 15 Pro",
+      "price": 899,
+      "old_price": 999,
+      "discount": "10%",
+      "rating": 5,
+      "reviews": 97,
+      "description": "Premium Apple flagship smartphone",
+      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-natural-titanium?wid=600&hei=600&fmt=jpeg&qlt=90&.v=1692846357014",
+      "id": "12345689"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S24",
+      "price": 999,
+      "old_price": 1099,
+      "discount": "9%",
+      "rating": 4.5,
+      "reviews": 210,
+      "description": "Flagship Samsung phone with advanced AI features",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/levant_en/2401/gallery/levant-en-galaxy-s24-s928-481569-sm-s928bzipmeb-539315709"
+    },
+    {
+      "id": "3",
+      "name": "Google Pixel 8",
+      "price": 850,
+      "old_price": 899,
+      "discount": "5%",
+      "rating": 4.6,
+      "reviews": 165,
+      "description": "Google's latest Pixel phone with Tensor G3",
+      "image": "https://store.google.com/product/images/phone/b4ac88d84e2b942e1c539a78dce9d9.png"
+    },
+    {
+      "id": "4",
+      "name": "OnePlus 11",
+      "price": 700,
+      "old_price": 749,
+      "discount": "7%",
+      "rating": 4.4,
+      "reviews": 132,
+      "description": "High-performance OnePlus device with Hasselblad cameras",
+      "image": "https://image01.oneplus.net/ebp/202301/12/1-m00-25-33-cpgmoolotq-adeviabhcyaadlcaaazkpl7eerc757.png"
+    },
+    {
+      "id": "5",
+      "name": "Xiaomi 13",
+      "price": 650,
+      "old_price": 699,
+      "discount": "7%",
+      "rating": 4.3,
+      "reviews": 118,
+      "description": "Feature-rich Xiaomi phone with Leica optics",
+      "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-13/specs-header.png"
+    },
+    {
+      "id": "6",
+      "name": "Sony Xperia 1 IV",
+      "price": 1200,
+      "old_price": 1299,
+      "discount": "8%",
+      "rating": 4.5,
+      "reviews": 88,
+      "description": "Sony flagship with exceptional camera and 4K display",
+      "image": "https://m.media-amazon.com/images/I/51mlk6GB8eL._AC_SL1200_.jpg"
+    }
+  ]
+}

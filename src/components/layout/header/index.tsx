@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Sun, SunDim } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 
-import Logo from "../../assets/images/logo.png";
-import profile from "../../assets/images/profile.jpg";
+import Logo from "../../../assets/images/logo.png";
+import LogoDark from "../../../assets/images/logo-dark.png";
+import profile from "../../../assets/images/profile.jpg";
 
 import styles from "./header.module.scss";
 
@@ -23,7 +24,11 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles["header-left"]}>
-        <img src={Logo} alt="Logo" className={styles.logo} />
+        <img
+          src={theme === "dark" ? LogoDark : Logo}
+          alt="Logo"
+          className={styles.logo}
+        />
       </div>
 
       <div className={styles["header-right"]}>
@@ -39,7 +44,7 @@ const Header: React.FC = () => {
                 theme === "dark" ? styles.dark : ""
               }`}
             >
-              {theme === "light" ? <SunDim /> : <Sun />}
+              {theme === "light" ? <Sun /> : <Moon />}
             </div>
           </div>
 
