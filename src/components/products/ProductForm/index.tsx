@@ -3,7 +3,7 @@ import { z } from "zod";
 import styles from "./productform.module.scss";
 
 export interface Product {
-  id?: number;
+  id: number;
   name: string;
   price: number;
   old_price: number;
@@ -35,7 +35,7 @@ export default function ProductForm({
   onSubmit,
 }: ProductFormProps) {
   const [form, setForm] = useState<Product>({
-    id: initialData?.id,
+    id: initialData?.id || 0,
     name: initialData?.name || "",
     price: initialData?.price || 0,
     old_price: initialData?.old_price || 0,

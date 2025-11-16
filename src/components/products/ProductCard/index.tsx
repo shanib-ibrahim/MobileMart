@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./productcard.module.scss";
 import type { Product } from "../../../types/product.type";
+import { Pencil, Trash2 } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
@@ -15,6 +16,19 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div className={styles.card}>
+      <div className={styles.topActions}>
+        <Pencil
+          className={styles.iconEdit}
+          size={28}
+          onClick={() => onEdit(product)}
+        />
+        <Trash2
+          className={styles.iconDelete}
+          size={28}
+          onClick={() => onDelete(product.id)}
+        />
+      </div>
+
       <div className={styles.imageContainer}>
         <img src={product.image} alt={product.name} />
       </div>
@@ -33,18 +47,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
       </div>
 
       <div className={styles.finalPrice}>${product.price}</div>
-
-      <div className={styles.actions}>
-        <button onClick={() => onEdit(product)} className={styles.editBtn}>
-          Edit
-        </button>
-        <button
-          onClick={() => onDelete(product.id)}
-          className={styles.deleteBtn}
-        >
-          Delete
-        </button>
-      </div>
     </div>
   );
 };

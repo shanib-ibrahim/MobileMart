@@ -65,17 +65,6 @@
       "reviews": 88,
       "description": "Sony flagship with exceptional camera and 4K display",
       "image": "https://m.media-amazon.com/images/I/61IfH6+sbYL.jpg"
-    },
-    {
-      "id": "466c",
-      "name": "Test `",
-      "price": 3,
-      "old_price": 1,
-      "discount": "20%",
-      "rating": 3,
-      "reviews": 50,
-      "description": "test",
-      "image": "https://amateurphotographer.com/wp-content/uploads/sites/7/2022/08/Sony_Xperia_1IV_Product_Shot_008.jpg"
     }
   ]
 }
