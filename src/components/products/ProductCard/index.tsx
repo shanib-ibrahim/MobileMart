@@ -15,25 +15,18 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div className={styles.card}>
-      {/* Product ID */}
-      <span className={styles.productId}>id: {product.id}</span>
-
-      {/* Product Image */}
       <div className={styles.imageContainer}>
         <img src={product.image} alt={product.name} />
       </div>
 
-      {/* Product Info */}
       <h3 className={styles.title}>{product.name}</h3>
 
-      {/* Rating */}
       <div className={styles.rating}>
         {"★".repeat(product.rating)}
         {"☆".repeat(5 - product.rating)}
         <span className={styles.reviewCount}>({product.reviews})</span>
       </div>
 
-      {/* Price Section */}
       <div className={styles.priceSection}>
         <span className={styles.oldPrice}>${product.old_price}</span>
         <span className={styles.discount}>{product.discount}</span>
@@ -41,7 +34,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
       <div className={styles.finalPrice}>${product.price}</div>
 
-      {/* Action Buttons */}
       <div className={styles.actions}>
         <button onClick={() => onEdit(product)} className={styles.editBtn}>
           Edit

@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { z } from "zod";
+import styles from "./productform.module.scss";
 
 export interface Product {
   id?: number;
@@ -51,7 +52,6 @@ export default function ProductForm({
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-
     const numericFields = ["price", "old_price", "rating", "reviews"];
 
     setForm((prev) => ({
@@ -79,11 +79,11 @@ export default function ProductForm({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="product-form">
+    <form onSubmit={handleSubmit} className={styles["product-form"]}>
       <h2>{initialData ? "Edit Product" : "Add Product"}</h2>
 
       {/* Name */}
-      <div className="form-group">
+      <div className={styles["form-group"]}>
         <label>Product Name</label>
         <input
           type="text"
@@ -92,11 +92,11 @@ export default function ProductForm({
           onChange={handleChange}
           placeholder="Enter product name"
         />
-        {errors.name && <span className="error">{errors.name}</span>}
+        {errors.name && <span className={styles.error}>{errors.name}</span>}
       </div>
 
       {/* Image URL */}
-      <div className="form-group">
+      <div className={styles["form-group"]}>
         <label>Image URL</label>
         <input
           type="text"
@@ -105,37 +105,39 @@ export default function ProductForm({
           onChange={handleChange}
           placeholder="https://example.com/image.jpg"
         />
-        {errors.image && <span className="error">{errors.image}</span>}
+        {errors.image && <span className={styles.error}>{errors.image}</span>}
       </div>
 
       {/* Price */}
-      <div className="form-group">
+      <div className={styles["form-group"]}>
         <label>Price ($)</label>
         <input
-          type="number"
+          type="text"
           name="price"
           value={form.price}
           onChange={handleChange}
           min={1}
         />
-        {errors.price && <span className="error">{errors.price}</span>}
+        {errors.price && <span className={styles.error}>{errors.price}</span>}
       </div>
 
       {/* Old Price */}
-      <div className="form-group">
+      <div className={styles["form-group"]}>
         <label>Old Price ($)</label>
         <input
-          type="number"
+          type="text"
           name="old_price"
           value={form.old_price}
           onChange={handleChange}
           min={1}
         />
-        {errors.old_price && <span className="error">{errors.old_price}</span>}
+        {errors.old_price && (
+          <span className={styles.error}>{errors.old_price}</span>
+        )}
       </div>
 
       {/* Discount */}
-      <div className="form-group">
+      <div className={styles["form-group"]}>
         <label>Discount (%)</label>
         <input
           type="text"
@@ -144,38 +146,42 @@ export default function ProductForm({
           onChange={handleChange}
           placeholder="10%"
         />
-        {errors.discount && <span className="error">{errors.discount}</span>}
+        {errors.discount && (
+          <span className={styles.error}>{errors.discount}</span>
+        )}
       </div>
 
       {/* Rating */}
-      <div className="form-group">
+      <div className={styles["form-group"]}>
         <label>Rating (1–5)</label>
         <input
-          type="number"
+          type="text"
           name="rating"
           min={1}
           max={5}
           value={form.rating}
           onChange={handleChange}
         />
-        {errors.rating && <span className="error">{errors.rating}</span>}
+        {errors.rating && <span className={styles.error}>{errors.rating}</span>}
       </div>
 
       {/* Reviews */}
-      <div className="form-group">
+      <div className={styles["form-group"]}>
         <label>Total Reviews</label>
         <input
-          type="number"
+          type="text"
           name="reviews"
           min={0}
           value={form.reviews}
           onChange={handleChange}
         />
-        {errors.reviews && <span className="error">{errors.reviews}</span>}
+        {errors.reviews && (
+          <span className={styles.error}>{errors.reviews}</span>
+        )}
       </div>
 
       {/* Description */}
-      <div className="form-group">
+      <div className={styles["form-group"]}>
         <label>Description</label>
         <textarea
           name="description"
@@ -184,11 +190,11 @@ export default function ProductForm({
           placeholder="Enter product description"
         />
         {errors.description && (
-          <span className="error">{errors.description}</span>
+          <span className={styles.error}>{errors.description}</span>
         )}
       </div>
 
-      <button type="submit" className="btn-submit">
+      <button type="submit" className={styles["btn-submit"]}>
         {initialData ? "Update Product" : "Add Product"}
       </button>
     </form>

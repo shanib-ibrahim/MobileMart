@@ -10,6 +10,7 @@ import {
 import type { Product } from "../../types/product.type";
 import styles from "./products.module.scss";
 import Loader from "../common/loader/GlobalLoader";
+import GlobalModal from "../common/modal/GlobalModal";
 
 const Products: React.FC = () => {
   const { data: products, isLoading } = useGetProductsQuery();
@@ -82,20 +83,14 @@ const Products: React.FC = () => {
       )}
 
       {modalOpen && (
-        <div className={styles["modal-overlay"]}>
-          <div className={styles["modal-content"]}>
-            <ProductForm
-              initialData={selectedProduct}
-              onSubmit={handleSubmit}
-            />
-            <button
-              className={styles["btn-close"]}
-              onClick={() => setModalOpen(false)}
-            >
-              Close
-            </button>
-          </div>
-        </div>
+        <GlobalModal
+          isOpen={modalOpen}
+          onClose={() => {
+            setModalOpen(false);
+          }}
+        >
+          <ProductForm initialData={selectedProduct} onSubmit={handleSubmit} />
+        </GlobalModal>
       )}
     </div>
   );

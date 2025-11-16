@@ -8,22 +8,21 @@
       "rating": 5,
       "reviews": 97,
       "description": "Premium Apple flagship smartphone",
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-natural-titanium?wid=600&hei=600&fmt=jpeg&qlt=90&.v=1692846357014",
+      "image": "https://cdn.mafrservices.com/sys-master-root/hd1/h1e/50578937577502/2122857_main.jpg",
       "id": "12345689"
     },
     {
-      "id": "2",
       "name": "Samsung Galaxy S24",
       "price": 999,
       "old_price": 1099,
       "discount": "9%",
-      "rating": 4.5,
+      "rating": 5,
       "reviews": 210,
       "description": "Flagship Samsung phone with advanced AI features",
-      "image": "https://images.samsung.com/is/image/samsung/p6pim/levant_en/2401/gallery/levant-en-galaxy-s24-s928-481569-sm-s928bzipmeb-539315709"
+      "image": "https://cdn.mafrservices.com/pim-content/UAE/media/product/2143977/1728226803/2143977_main.jpg?im=Resize=376",
+      "id": "2"
     },
     {
-      "id": "3",
       "name": "Google Pixel 8",
       "price": 850,
       "old_price": 899,
@@ -31,7 +30,8 @@
       "rating": 4.6,
       "reviews": 165,
       "description": "Google's latest Pixel phone with Tensor G3",
-      "image": "https://store.google.com/product/images/phone/b4ac88d84e2b942e1c539a78dce9d9.png"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVdPolu52aJ4yAVOKFujyR4L6dT_WZg-6SA&s",
+      "id": "3"
     },
     {
       "id": "4",
@@ -42,7 +42,7 @@
       "rating": 4.4,
       "reviews": 132,
       "description": "High-performance OnePlus device with Hasselblad cameras",
-      "image": "https://image01.oneplus.net/ebp/202301/12/1-m00-25-33-cpgmoolotq-adeviabhcyaadlcaaazkpl7eerc757.png"
+      "image": "https://m.media-amazon.com/images/I/51z3U932irL.jpg"
     },
     {
       "id": "5",
@@ -53,7 +53,7 @@
       "rating": 4.3,
       "reviews": 118,
       "description": "Feature-rich Xiaomi phone with Leica optics",
-      "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-13/specs-header.png"
+      "image": "https://wp.jomla.ae/wp-content/uploads/2023/03/xiaomi-13-5g-dual-sim-1.jpg"
     },
     {
       "id": "6",
@@ -64,7 +64,18 @@
       "rating": 4.5,
       "reviews": 88,
       "description": "Sony flagship with exceptional camera and 4K display",
-      "image": "https://m.media-amazon.com/images/I/51mlk6GB8eL._AC_SL1200_.jpg"
+      "image": "https://m.media-amazon.com/images/I/61IfH6+sbYL.jpg"
+    },
+    {
+      "id": "466c",
+      "name": "Test `",
+      "price": 3,
+      "old_price": 1,
+      "discount": "20%",
+      "rating": 3,
+      "reviews": 50,
+      "description": "test",
+      "image": "https://amateurphotographer.com/wp-content/uploads/sites/7/2022/08/Sony_Xperia_1IV_Product_Shot_008.jpg"
     }
   ]
 }
