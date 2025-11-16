@@ -92,8 +92,8 @@ src/
 │  │  └─ loader/
 │  ├─ layout/
 │  └─ products/
-│     ├─ ProductCard.tsx
-│     ├─ ProductForm.tsx
+│     ├─ ProductCard
+│     ├─ ProductForm
 │     └─ index.tsx (Products Page)
 ├─ features/
 │  └─ productSlice.ts
