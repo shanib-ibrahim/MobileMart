@@ -1,5 +1,3 @@
-Here is the content in Markdown format:
-
 ## Product Management App
 
 A React + Vite application to manage products with add, edit, delete, and search functionality. The app uses **Redux Toolkit Query (RTK Query)** to fetch data from a mock **JSON Server** and is styled with **SCSS modules**. Integration tests are written using **Jest** and **React Testing Library**.
